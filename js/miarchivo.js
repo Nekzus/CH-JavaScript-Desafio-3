@@ -31,7 +31,7 @@ while(usuario != null) {
             }
             break;
         default:
-            alert("Error: el usuario no existe.");
+            alert(`Error: el usuario ingresado "${usuario}" no existe.`);
     }
         usuario = prompt("Vuelve a ingresar Usuario - 'Mauricio' o 'Natalia'."); // Si el usuario no existe, o esta vacio, vuelve a solicitar el ingreso.
 }
