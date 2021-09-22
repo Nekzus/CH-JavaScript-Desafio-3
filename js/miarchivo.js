@@ -15,20 +15,18 @@ let j = 0; // cuenta sesiones 'natalia'.
 while(usuario != null) {
     switch(usuario.toLowerCase()) {
         case "mathias":  // si el usuario es mathias ejecuta if, de lo contrario verifica proximo usuario.
-            if(i < 2) { // Si la cantidad de sesiones no supera 2 continua con el conteo de sesiones, de lo contrario devuelve mensaje de número de sesiones superadas.
-                i++; // Se incrementa contador de sesiones.
-                alert(`Bienvenido Mathias Barbosa \nTipo de cuenta: Tutor \nSesiones: ${i} \nSesiones restantes: ${2 - i}`);
-            }else{
-            alert(`Mathias superaste el número de sesiones permitidas.`);
-            }
+            i < 2  // Aplico un IF TERNARIO, si la cantidad de sesiones no supera 2 continua con el conteo de sesiones, de lo contrario devuelve mensaje de número de sesiones superadas.
+                ? (i++, // Se incrementa contador de sesiones.
+                alert(`Bienvenido Mathias Barbosa \nTipo de cuenta: Tutor \nSesiones: ${i} \nSesiones restantes: ${2 - i}`))
+                : alert(`Mathias superaste el número de sesiones permitidas.`);
+
             break;
         case "natalia":  // si el usuario es natalia ejecuta if, de lo contrario devuelve mensaje de error 'usuario no existe'.
-            if(j < 2) {  // Si la cantidad de sesiones no supera 2 continua con el conteo de sesiones, de lo contrario devuelve mensaje de número de sesiones superadas.
-                j++; // Se incrementa contador de sesiones.
-                alert(`Bienvenida Natalia Machado \nTipo de cuenta: Profesor \nSesiones: ${j} \nSesiones restantes: ${2 - j}`);
-            }else{
-            alert(`Natalia superaste el número de sesiones permitidas.`);
-            }
+            j < 2  // Aplico un IF TERNARIO, si la cantidad de sesiones no supera 2 continua con el conteo de sesiones, de lo contrario devuelve mensaje de número de sesiones superadas.
+                ? (j++, // Se incrementa contador de sesiones.
+                alert(`Bienvenida Natalia Machado \nTipo de cuenta: Profesor \nSesiones: ${j} \nSesiones restantes: ${2 - j}`))
+                : alert(`Natalia superaste el número de sesiones permitidas.`);
+
             break;
         default:
             alert(`Error: el usuario ingresado "${usuario}" no existe.`);
