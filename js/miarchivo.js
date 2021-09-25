@@ -1,9 +1,9 @@
 /*** En este tercer desafio genere el codigo mediante un bucle while que verifica que el campo de usuario no este vacio, con la aplicacion del 
 condicional switch se verifica la coincidencia del usuario ingresado con el usuario registrado.
-Una vez se comprueba la legitimidad del usuario, mediante un if y contadores, se limita el acceso a 2 sesiones por usuario. ****/
+Una vez se comprueba la legitimidad del usuario, mediante un if y contadores, se limita el acceso a 2 sesiones por usuario registrado. ****/
 
 
-/* El usuario ingresa sus datos de cuenta.
+/* El usuario ingresa su nombre de cuenta.
 Usuarios Registrados 'mathias' y 'natalia'. */
 let usuario = prompt("Ingresar Usuario - 'mathias' o 'natalia'.");
 
